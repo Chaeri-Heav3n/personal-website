@@ -1,0 +1,501 @@
+/*--------------- basic styling ---------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Azeret Mono' !important;
+    background: #0f0f0f !important;
+    color: #ffffe0 !important;
+}
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+@media(max-width: 768px) {
+    .whitespace {
+        display: none;
+    }
+}
+
+
+/*--------------- navigation ---------------*/
+nav {
+    width: 100%;
+    background: #0f0f0f;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+}
+
+
+nav #brand {
+    font-family: 'Rowdies';
+    font-size: 1.6rem;
+    float: left;
+    display: block;
+    margin-left: 82px;
+    line-height: 80px;
+}
+
+nav #brand a {
+    color: #ffffe0;
+    transition: all 0.3s ease-out;
+}
+
+
+
+nav #brand a:hover {
+    text-decoration: line-through;
+}
+
+nav #menu {
+    float: left;
+    right: 80px;
+    position: fixed;
+}
+
+nav #menu li {
+    padding-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+nav #menu li span {
+    font-weight: 700;
+}
+
+nav #menu li a {
+    color: #ffffe0;
+}
+
+nav #menu li a:hover {
+    text-decoration: line-through;
+}
+
+#toggle {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-weight: 300;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-btn {
+    color: #ffffe0;
+    position: absolute;
+    right: 16px;
+    font-weight: 300;
+    z-index: 2;
+    cursor: pointer;
+    top: -2px;
+    line-height: 80px;
+}
+
+#resize {
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+    z-index: 2;
+}
+
+#resize #menu {
+    height: 90px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-40%);
+    text-align: center;
+    display: table-cell;
+    vertical-align: center;
+}
+
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+    min-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+    margin-top: 140px;
+}
+
+#resize #menu li a {
+    color: #26fe02;
+}
+
+#resize #menu li a:hover {
+    text-decoration: line-through;
+}
+
+#resize.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+    #toggle {
+        color: #ffffe0;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 6px;
+        margin-right: 4px;
+    }
+
+    nav #brand {
+        margin-left: 24px;
+    }
+    #menu a {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    #resize li span {
+        font-weight: bolder;
+        color: #26fe02;
+    }
+    nav #menu {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    #resize {
+        visibility: hidden !important;
+    }
+}
+
+
+/*--------------- hero section ---------------*/
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+}
+
+#bg-container {
+    z-index: 0;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 50px;
+    font-size: 65px;
+    color: #7b69ee;
+    font-family: 'VT323', monospace;
+    background: #fec1cb;
+}
+
+
+@media(max-width: 768px) {
+    .header h1 {
+        font-size: 39px;
+    }
+}
+
+/*--------------- typewriter ---------------*/
+
+#text {
+	border-right: solid #fd00ff 22px;
+	height: 46px;
+}
+
+
+/*--------------- projects section ---------------*/
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 500px;
+}
+
+.project1 {
+    background: url() no-repear 50% 50%; /*ADD PROJECT PHOTO*/
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project1::after {
+    content: "Here.yNow."; /*ADD PROJECT NAME*/
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: -60%;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 768px) {
+    .project {
+        width: 90% !important;
+        margin: 14px auto;
+    }
+    .vertical {
+        display: none;
+    }
+    .project1::after {
+        display: none;
+    }
+}
+
+
+/*--------------- footer section ---------------*/
+.collab {
+    text-align: right;
+}
+
+.collab p {
+    font-family: Pacifico;
+    font-size: 1.1rem;
+    color: #ffff00;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.hr {
+    background: rgba(255, 255, 255, 0.2);
+    height: 1px;
+}
+
+
+.info h4 {
+    font-family: 'Rowdies';
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.info p {
+    color: #ffffe0;
+    font-weight: lighter;
+}
+
+.info li {
+    font-family: 'Rowdies';
+    font-weight: lighter;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.info li a {
+    color: #fd00ff;
+}
+
+.info li a:hover {
+    text-decoration: line-through;
+}
+
+#ig::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #ffff00;
+}
+
+#yt::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #0800ff;
+}
+
+#gh::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #26fe02;
+}
+
+#media, #address {
+    text-align: right;
+}
+
+#media ul {
+    list-style: none;
+}
+
+#media ul li {
+    display: inline-block;
+}
+
+@media(max-width: 768px) {
+    .collab, #personal, #media, #address {
+        text-align: center;
+    }
+
+    .info ul {
+        margin: 0 0 0 -22px;
+        padding: 0;
+    }
+}
+
+
+/*---------- work page ----------*/
+
+.hero-content {
+    margin-left: 0%;
+}
+
+.hero-content p {
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+
+.hero-content h3 {
+    text-align: left;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .hero-content {
+        padding-top: 50px;
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+
+/*---------- about page -----------*/
+
+.about {
+    height: 500px;
+    margin-top: 120px;
+}
+
+.image {
+    background: url () no-repeat 50% 70%; /* ADD PHOTO OF ME*/
+}
+
+
+
+/*---------- contact form -----------*/
+
+#contact-form {
+    margin: 5% 1.4%;
+}
+
+#contact-form ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#contact-form li {
+    padding: 10px;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: .8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.send:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
+@media(max-width: 768px) {
+    #contact-form {
+        margin: 5% -8%;
+        width: 98%;
+    }
+}
