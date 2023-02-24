@@ -1,235 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Minimalist Portfolio</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="chaeri-heav3n">
 
-		<!-- Fonts -->
-		<link rel="stylesheet" href="/sk modernist/Sk-Modernist-Regular.otf" />
-		<link rel="stylesheet" href="/bigilla/Bigilla.otf" />
-		<link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Raleway+Dots&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title>Chaeri Heav3n Portfolio</title>
 
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="container">
-				<!-- navbar -->
-				<div class="navbar">
-					<div class="navbar-container">
-						<div class="site-title"><a href="https://www.instagram.com/chaeri.heav3n/" target="_blank">chaeri.heav3n</a></div>
-						<div class="site-type">portfolio</div>
-						<div class="site-year">2023</div>
-					</div>
-				</div>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
-				<!-- divider -->
-				<div class="divider"></div>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Pacifico&family=Roboto+Mono:wght@300&family=Rowdies&family=VT323&display=swap" rel="stylesheet">
 
-				<!-- header -->
-				<div class="header">
-					<div class="header-container">
-						<h1>Zay~ Ford :)<br />Digital Designer</h1>
-					</div>
-				</div>
+    <!-- bootstrap cdns -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-				<!-- hero-image -->
-				<div class="scrollable hero-image">
-					<div class="cell hero-image-container" data-scroll data-scroll-speed="2">
-						<div class="image-cell">
-							<img src="./images/DSC05443 (1).jpeg" alt="Photo of Zay" >
-						</div>
-					</div>
-				</div>
-				
-				<!--<div class="hero-image">
-					<div class="hero-image-container" data-scroll data-scroll-speed="2">
-						<img src="https://i.ibb.co/CBBfZDP/DSC05443-1.jpg" alt="photo of zay" border="0"" alt="" />
-					</div>
-				</div>-->
+   
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.min.js"></script>
 
-				<div class="whitespace"></div>
 
-				<!-- sections -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">about</div>
-						<div class="section-order">/001</div>
-					</div>
-				</div>
+    
+</head>
 
-				<div class="divider"></div>
+<body>
 
-				<!-- about -->
-				<section class="about">
-					<div class="about-container">
-						<p>
-							Greetings! I'm chaeri.heav3n, fka, Zay. My deep driving passion & muse
-							is life itself. My experiences heavily influence my creations 
-							and is channeled to create sound, music, poetry, 3D art, abstract art, and so on. 
-						</p>
-						<p>
-							My declared life's work is being funneled into <a href="https://www.youtube.com/channel/UCB2vyk19067nWCTAVhuNkPA" target="_blank">here.ynow</a>.
-							It is currently under construction as I get my online presence started, so follow me
-							on <a href="https://www.instagram.com/chaeri.heav3n/" target="_blank">Instagram</a> for updates.
-						</p>
-						<p>Thanks for stopping by! And I hope to see you stay for the journey!</p>
-					</div>
-				</section>
+    <div class="wrapper">
 
-				<div class="whitespace"></div>
+        <!------------ NAVBAR BEGINS HERE ------------>
+        <nav>
+            <span id="brand"><a href="index.html">chaeri.heav3n</a></span>
+    
+            
+            <ul id="menu">
+                <li><a href="index.html">home<span>.</span></a></li>
+                <li><a href="projects.html">projects<span>.</span></a></li>
+                <li><a href="services.html">services<span>.</span></a></li>
+                <li><a href="about.html">about<span>.</span></a></li>
+                <li><a href="blog.html">blog<span>.</span></a></li>
+                <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
 
-				<!-- projects -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">projects + services</div>
-						<div class="section-order">/002</div>
-					</div>
-				</div>
+            <div id="toggle">
+                <div class="span">menu</div>
+            </div>
+        </nav>
 
-				<div class="divider"></div>
+        <div id="resize">
+            <div class="close-btn">close</div>
 
-				<section class="project">
-					<div class="project-container">
-						<div>
-							<nav class="menu">
-								<div class="menu__item">
-									<a class="menu__item-link" href="email-web.html">/ EMAIL & WEB DESIGN</a>
-									<img class="menu__item-img" src="images/webpage.png" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>EMAIL & WEB DESIGN</span>
-											<span>EMAIL & WEB DESIGN</span>
-											<span>EMAIL & WEB DESIGN</span>
-											<span>EMAIL & WEB DESIGN</span>
-										</div>
-									</div>
-								</div>
+            <ul id="menu">
+                <li><a href="index.html">home<span>.</span></a></li>
+                <li><a href="projects.html">projects<span>.</span></a></li>
+                <li><a href="services.html">services<span>.</span></a></li>
+                <li><a href="about.html">about<span>.</span></a></li>
+                <li><a href="blog.html">blog<span>.</span></a></li>
+                <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
+        </div>
+        <!------------ NAVBAR ENDS HERE ------------>
 
-								<div class="divider"></div>
 
-								<div class="menu__item">
-									<a class="menu__item-link" href="3d.html">/ 3D & AUG. REALITY</a>
-									<img class="menu__item-img" src="images/noback.png0000.png" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>3D & AUGMENTED REALITY</span>
-											<span>3D & AUGMENTED REALITY</span>
-											<span>3D & AUGMENTED REALITY</span>
-											<span>3D & AUGMENTED REALITY</span>
-										</div>
-									</div>
-								</div>
 
-								<div class="divider"></div>
+        <!------------ HERO SECTION BEGINS HERE ------------>
+        
+        <div class="hero">
+            <div class="header">
+                <h1 id="text"></h1>
+                <script src="app.js"></script>
+            </div>
+            <div id="bg-container">
+                <div id="bg"></div>
+                <script type="text/javascript" src="particles.min.js"></script>
+                <script type="text/javascript" src="bg-particles.js"></script>
+            </div>
+        </div>
+        
+        
+        <!------------ HERO SECTION ENDS HERE ------------>
 
-								<div class="menu__item">
-									<a class="menu__item-link" href="https://www.youtube.com/channel/UCB2vyk19067nWCTAVhuNkPA" target="_blank">/ HERE.YNOW (YT)</a>
-									<img class="menu__item-img" src="images/self love.png" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>HERE.YNOW</span>
-											<span>HERE.YNOW</span>
-											<span>HERE.YNOW</span>
-											<span>HERE.YNOW</span>
-										</div>
-									</div>
-								</div>
 
-								<div class="divider"></div>
+        
+        <!------------ FOOTER SECTION STARTS HERE ------------>
+        <div class="footer">
+            <div class="container">
+                <br><br>
+                <div class="collab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="wow fadeInUp">Got an interesting idea? I can help you.</p>
+                        </div>
+                        
+                    </div>
+                </div>
 
-								<!--<div class="menu__item">
-									<a class="menu__item-link">/ HERE.YNOW (YT)</a><span class="construction">*under consrtuction*</span>
-									<img class="menu__item-img" src="images/project-four.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
-										</div>
-									</div>
-								</div>-->
+                <br>
 
-								<div class="divider"></div>
+                <div class="hr">
+                    <div class="row"></div>
+                </div>
 
-								<!--<div class="menu__item">
-									<a class="menu__item-link">/ </a>
-									<img class="menu__item-img" src="images/project-five.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner" aria-hidden="true">
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-										</div>
-									</div>
-								</div>-->
-							</nav>
-						</div>
-					</div>
-				</section>
+                <br><br>
 
-				<div class="whitespace"></div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-lg-4" id="personal">
+                            <p class="wow fadeInUp">status</p>
+                            <h4 class="wow fadeInUp" data-wow-delay:"0.2s">open for collaborations</h4>
+                            <br><br>
+                        </div>
 
-				<!-- clients -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">status</div>
-						<div class="section-order">/003</div>
-					</div>
-				</div>
+                        <div class="col-lg-4" id="media">
+                            <p class="wow fadeInUp" data-wow-delay:"0s">follow me</p>
+                            
+                            <ul>
+                                <li id="ig" class="wow fadeInUp" data-wow-delay:"0.4s"><a href="https://www.instagram.com/chaeri.heav3n/">ig</a></li>
+                                <li id="yt" class="wow fadeInUp" data-wow-delay:"0.6s"><a href="https://www.youtube.com/channel/UCB2vyk19067nWCTAVhuNkPA">yt</a></li>
+                                <li id="gh" class="wow fadeInUp" data-wow-delay:"0.8s"><a href="https://github.com/Chaeri-Heav3n">gh</a></li>
+                            </ul>
 
-				<div class="divider"></div>
+                            <br><br>
+                        </div>
 
-				<section class="clients">
-					<div class="clients-container">
-						<p>
-							<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;open for work & collaborations.
-							<br />
-						</p>
-					</div>
-				</section>
+                        <div class="col-lg-4" id="address">
+                            <p class="wow fadeInUp" data-wow-delay:"0s">say hello</p>
+                            <h4 class="wow fadeInUp" data-wow-delay:"0.2s">chaeri.heav3n@htmldreams.com</h4>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------ FOOTER SECTION ENDS HERE ------------>
 
-				<div class="whitespace"></div>
 
-				<!-- social  -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">socials</div>
-						<div class="section-order">/004</div>
-					</div>
-				</div>
 
-				<div class="divider"></div>
+        <br><br><br><br>
 
-				<section class="socials">
-					<div class="socials-container">
-						<div class="socials-id dr"><a href="https://www.instagram.com/chaeri.heav3n/" target="_blank">instagram</a></div>
-						<div class="socials-id ln"><a href="https://github.com/Chaeri-Heav3n" target="_blank">github</a></div>
-						<div class="socials-id ig"><a href="">linkedin</a></div>
-						<div class="socials-id tw"><a href="https://www.youtube.com/playlist?list=PLOGuxFMUsIM8O11z3X5QWgZnyqUljTPb8" target="_blank">✰playlist✰</a></div>
-					</div>
-				</section>
+    </div>
 
-				<div class="divider"></div>
+    <!-- greensock cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-				<!-- footer -->
-				<div class="footer">
-					<div class="navbar">
-						<div class="navbar-container">
-							<div class="site-title">chaeri.heav3n@htmldreams.com</div>
-							<div class="site-year">55.386656, 11.764279</div>
-						</div>
-					</div>
-				</div>
-				<br />
-			</div>
-		</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-	</body>
+    <script>
+        //navigation starts here
+
+        $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+        $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+        $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+        //navigation ends here
+
+        //nav animation
+
+        TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom("menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+        }, 0.1)
+
+        // nav animation ends
+
+        new WOW().init();
+
+    </script>
+   
+</body>
 </html>
